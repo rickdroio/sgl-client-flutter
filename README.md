@@ -1,2 +1,1 @@
-# sgl-client-flutter
-ERP system for retail stores
+flutter pub upgrade --major-versions
