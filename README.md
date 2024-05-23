@@ -1,1 +1,1 @@
-flutter pub upgrade --major-versions
+ERP client system for retail stores

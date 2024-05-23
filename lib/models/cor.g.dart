@@ -7,15 +7,16 @@ part of 'cor.dart';
 // **************************************************************************
 
 Cor _$CorFromJson(Map<String, dynamic> json) => Cor(
-      json['idCor'] as String,
       json['nome'] as String,
       json['sigla'] as String,
       json['code'] as String?,
-    )..tenantId = (json['tenantId'] as num).toInt();
+    )
+      ..id = (json['id'] as num?)?.toInt() ?? 0
+      ..tenantId = (json['tenantId'] as num).toInt();
 
 Map<String, dynamic> _$CorToJson(Cor instance) => <String, dynamic>{
+      'id': instance.id,
       'tenantId': instance.tenantId,
-      'idCor': instance.idCor,
       'nome': instance.nome,
       'sigla': instance.sigla,
       'code': instance.code,

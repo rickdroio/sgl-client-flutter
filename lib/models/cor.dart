@@ -6,9 +6,8 @@ part 'cor.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Cor extends BaseModel {
-  Cor(this.idCor, this.nome, this.sigla, this.code);
+  Cor(this.nome, this.sigla, this.code);
 
-  String idCor;
   String nome;
   String sigla;
   String? code;

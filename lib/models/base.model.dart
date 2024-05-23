@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 
 abstract class BaseModel {
-  //@JsonKey(defaultValue: 0, includeFromJson: true, includeToJson: true)
-  //int id = 0;
+  @JsonKey(defaultValue: 0, includeFromJson: true, includeToJson: true)
+  int id = 0;
 
   @JsonKey(includeFromJson: true, includeToJson: true)
   int tenantId = 0;

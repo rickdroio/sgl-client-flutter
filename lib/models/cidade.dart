@@ -36,9 +36,8 @@ class Cidade extends BaseModel {
     'TO',
   ];
 
-  Cidade(this.idCidade, this.nome, this.uf, this.ibge);
+  Cidade(this.nome, this.uf, this.ibge);
 
-  String idCidade;
   String nome;
   String uf;
   String ibge;
